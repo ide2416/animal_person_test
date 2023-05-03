@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>동물 성격 테스트</title>
+	<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+	<script>
+		window.onload = function() {
+			var modal = document.getElementById("myModal");
+			modal.style.display = "block";
+			var span = document.getElementsByClassName("close")[0];
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		}
+	</script>
+	<style>
+		.modal {
+			display: none;
+			position: fixed;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.8);
+		}
+		.modal-content {
+			background-color: #fefefe;
+			margin: 15% auto;
+			padding: 20px;
+			border: 1px solid #888;
+			width: 80%;
+		}
+		.close {
+			color: #aaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+		}
+		.close:hover,
+		.close:focus {
+			color: black;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<p>이 웹은 개발중입니다</p>
+		</div>
+	</div>
+	<h1></h1>
+	<p></p>
+</body>
+
+	<style>
+		body {
+			font-family: 'Jua', sans-serif;
+      font-size: 24px;
+      line-height: 1.5;
+			background: linear-gradient(135deg, #F1F2B5, #135058);
+			margin: 0;
+			padding: 0;
+		}
+
+		form {
+			margin: 30px;
+		}
+
+		input[type="radio"] {
+			margin-right: 5px;
+			vertical-align: middle;
+		}
+
+		label {
+			margin-right: 20px;
+		}
+
+		.button {
+			background-color: rgba(0, 0, 0, 0.2);
+			color: #ffffff;
+			font-size: 20px;
+			padding: 15px 30px;
+			border: none;
+			border-radius: 50px;
+			box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+			filter: blur(0px);
+    }
+
+		.button:hover {
+			background-color: rgba(0, 0, 0, 0.3);
+			box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+		}
+	</style>
+</head>
+<body>
+	<h1 style="text-align: center; color: #fff;">동물 성격 테스트</h1>
+	<form>
+    <form>
+      <div>
+        <p>1. 가장 좋아하는 계절은?</p>
+        <div>
+          <label style="display:block"><input type="radio" name="q1" value="lion"> 봄</label>
+          <label style="display:block"><input type="radio" name="q1" value="otter"> 여름</label>
+          <label style="display:block"><input type="radio" name="q1" value="koala"> 가을</label>
+          <label style="display:block"><input type="radio" name="q1" value="panda"> 겨울</label>
+        </div>
+      </div>
+      <div>
+        <p>2. 먹고 싶은 음식은?</p>
+        <div>
+          <label style="display:block"><input type="radio" name="q2" value="lion"> 고기</label>
+          <label style="display:block"><input type="radio" name="q2" value="otter"> 해물</label>
+          <label style="display:block"><input type="radio" name="q2" value="koala"> 채소</label>
+          <label style="display:block"><input type="radio" name="q2" value="panda"> 과일</label>
+        </div>
+        <div>
+          <p>3. 휴일에 나는 주로?</p>
+          <label style="display:block"><input type="radio" name="q3" value="lion"> 집에서 푹 쉰다</label>
+          <label style="display:block"><input type="radio" name="q3" value="otter"> 나가서 놀러 다닌다</label>
+          <label style="display:block"><input type="radio" name="q3" value="koala"> 책을 읽거나 영화를 본다</label>
+          <label style="display:block"><input type="radio" name="q3" value="panda"> 운동이나 산책을 한다</label>
+        </div>
+      </div>
+      <button type="submit" class="button">결과 보기</button>
+    </form>
+    
+
+</body>
+</html>
+
+
